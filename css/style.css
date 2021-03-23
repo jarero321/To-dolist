@@ -1,0 +1,153 @@
+@import url(//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print);
+* {
+  padding: 0;
+  box-sizing:border-box;
+}
+:root {
+  --sombra: rgba(0, 0, 0, 0.16);
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/To-do\ list.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* barra de busqueda */
+.search-bar {
+  width: 100%;
+  height: 50px;
+}
+.search-bar textarea {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 10px var(--sombra);
+  resize: none;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+.ul-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.li-item {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--sombra);
+  align-items: center;
+  margin-bottom: 5px;
+}
+.random-color {
+  height: 30px;
+  width: 38px;
+  background-color: #2ecb00;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+input[type="checkbox"] {
+  display: none; /*solo se esconde para tener un campo personalisado*/
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+} /*esta linea significa esto + el siguiente elemento*/
+label:before {
+  margin-left: 20px;
+  margin-right: 20px;
+  content: "";
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #2ecb00;
+}
+
+.li-item button {
+  height: 30px;
+  width: 25px;
+  background-color: #ffffff;
+  background-image: url("../img/Icon\ metro-bin.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.li-item p {
+  flex-basis: 80%;
+  font-family: "Segoe Print";
+
+  font-size: 20px;
+}
+.complete {
+  text-decoration: line-through;
+  color: #707070;
+}
+.add__new-task {
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.title__new-task {
+  color: white;
+  font-size: 30px;
+}
+.container__add-new{
+    width: 100%;
+    height: 50px;
+    display: flex;
+
+}
+.container__add-new textarea {
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border: none;
+    box-shadow: 5px 5px 10px var(--sombra);
+    resize: none;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 80px;
+  }
+.container__add-new button {
+    background-color:#CB8700;
+    color:white;
+    font-size:20px;
+    width:5%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px ;
+    border: none;
+    cursor: pointer;
+
+}
+.none{
+  display:none;
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <filter id="Elipse_6" x="579" y="262" width="911" height="697" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#727272" flood-opacity="0.561"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-To-do_list">
+      <rect width="1366" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="To-do_list" data-name="To-do list" clip-path="url(#clip-To-do_list)">
+    <rect width="1366" height="768" fill="#00cbb6"/>
+    <ellipse id="Elipse_5" data-name="Elipse 5" cx="546.5" cy="286" rx="546.5" ry="286" transform="translate(-217 266)" fill="#cb0058"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Elipse_6)">
+      <ellipse id="Elipse_6-2" data-name="Elipse 6" cx="440.5" cy="333.5" rx="440.5" ry="333.5" transform="translate(594 272)" fill="#00a1cb"/>
+    </g>
+  </g>
+</svg>
